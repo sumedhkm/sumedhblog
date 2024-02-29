@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/png"> 
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+     <!--navbar-->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Contact.html">Good Morning</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="Index1.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li> 
+              
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+              <!-- Social Media Icons -->
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/login/"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/login/"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/sumedh-km/"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+<br><br>
+<form class="contact-form" id="contactForm">
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" name="firstName" required>
+    </div>
+    <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" name="lastName" required>
+    </div>
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" name="username" required>
+    </div>
+    <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" class="form-control" id="city" name="city" required>
+    </div>
+    <div class="form-group">
+        <label for="state">State</label>
+        <input type="text" class="form-control" id="state" name="state" required>
+    </div>
+    <div class="form-group">
+        <label for="zip">Zip</label>
+        <input type="text" class="form-control" id="zip" name="zip" required>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="agreeTerms" required>
+        <label class="form-check-label" for="agreeTerms">
+            Agree to terms and conditions
+        </label>
+    </div>
+    <button class="btn btn-primary mt-3" type="submit">Submit Form</button>
+
+    <!-- Success message container -->
+    <div class="success-message  mt-3" style="display: none;">
+        Your form has been successfully submitted!
+    </div>
+</form>
+
+    <br><br>
+   
+<div class="col-lg-7 col-12">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7823.828765911308!2d77.71294149999999!3d11.340964099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f3bab4d0d93%3A0x46081fa4cabd8c3!2sEdayankattuvalasu%2C%20Erode%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1709062807107!5m2!1sen!2sin" width="600" height="450" style="border:0;"
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br></div>
+    <div class="contact-details">
+      <marquee id="left"><p>Contact Details:</p>
+        <p>Address: Edayankattuvalasu, Erode</p>
+        <p>Email: sumedh@gmail.com</p>
+        <p>Phone Number: 9384945556</p></marquee>
+  </div>
+  
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container text-center">
+          <span class="text-muted">© 2024 Sumedh. All rights reserved.</span>
+      </div>
+  </footer>
+  
+        
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript for handling form submission
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the form element
+    const form = document.getElementById('contractForm');
+
+    // Add event listener for form submission
+    form.addEventListener('submit', function(event) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+
+        // Display the success message
+        const successMessage = document.querySelector('.success-message');
+        successMessage.style.display = 'block';
+
+        // Reset the form after a delay (you can adjust the delay as needed)
+        setTimeout(function() {
+            form.reset();
+            successMessage.style.display = 'none';
+        }, 3000); // Reset form and hide success message after 3 seconds (3000 milliseconds)
+    });
+});
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
